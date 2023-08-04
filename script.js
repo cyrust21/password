@@ -25,7 +25,7 @@ const initTimer = () => {
         }
         clearInterval(initCounter);
     
-        downloadBtn.innerText = encoded;
+        downloadBtn.innerText = `encoded`;
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerHTML = `<span class="icon material-symbols-rounded">vertical_align_bottom</span>
