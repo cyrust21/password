@@ -26,7 +26,8 @@ const initTimer = () => {
         clearInterval(initCounter);
         location.href = fileLink;
         downloadBtn.innerText = "Your file is downloading...";
-        let encoded = window.btoa(text);
+        document.getElementById("cyrust").innerHTML = "Original: " + text + "<br>Password: " + encoded;
+
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerHTML = `<span class="icon material-symbols-rounded">vertical_align_bottom</span>
