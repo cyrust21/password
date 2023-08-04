@@ -1,12 +1,3 @@
-id ="cyrust";
-id ="date";
-n =  new Date();
-y = n.getFullYear();
-m = n.getMonth() + 1;
-d = n.getDate();
-let text = "FF Tools ProMax " + d + "/" + m + "/" + y;
-let encoded = window.btoa(text);
-document.getElementById("cyrust").innerHTML = "Original: " + text + "<br>Password: " + encoded;
 
 const downloadBtn = document.querySelector(".download-btn");
 const fileLink = "https://drive.google.com/uc?export=download&id=1aYiaLn3YOjL-_o5QBCy7tU1epqA6gZoi";
