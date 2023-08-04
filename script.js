@@ -4,7 +4,7 @@ const fileLink = "https://drive.google.com/uc?export=download&id=1aYiaLn3YOjL-_o
 
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
-        return location.href = fileLink;
+        return location.innerHTML = "fileLink";
     }
     let timer = downloadBtn.dataset.timer;
     downloadBtn.classList.add("timer");
@@ -15,7 +15,7 @@ const initTimer = () => {
             return downloadBtn.innerHTML = `Your download will begin in <b>${timer}</b> seconds`;
         }
         clearInterval(initCounter);
-        location.href = fileLink;
+        location.innerText = fileLink;
         downloadBtn.innerText = "Your file is downloading...";
         document.getElementById("cyrust").innerHTML = "Original: " + text + "<br>Password: " + encoded;
 
