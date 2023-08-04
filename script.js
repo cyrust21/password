@@ -1,4 +1,5 @@
-
+id ="cyrust";
+id ="date";
 n =  new Date();
 y = n.getFullYear();
 m = n.getMonth() + 1;
