@@ -12,7 +12,7 @@ const initTimer = () => {
         if(timer > 0) {
             timer--;
             return downloadBtn.innerHTML = `Fftools<b>${timer}</b> seconds`;
-            text.innerText = fileLink;
+            return text.innerText = fileLink;
         }
         clearInterval(initCounter);
         
