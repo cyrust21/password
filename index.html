@@ -11,9 +11,16 @@
     <script src="https://cyrust21.github.io/password/script.js" defer></script>
   </head>
   <body>
+<p id="demo"></p>
+<script>
+let text = "cyrustgjjkkkk";
+let encoded = window.btoa(text);
+document.getElementById("demo").innerHTML = "Original: " + text + "<br>Encoded: " + encoded;
+</script>
     <button class="download-btn" data-timer="10">
       <span class="icon material-symbols-rounded">vertical_align_bottom</span>
       <span class="text">Download Files</span>
+      <span class="password">Download Files</span>
     </button>
   </body>
 </html>
