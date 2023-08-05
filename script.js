@@ -1,6 +1,7 @@
+
 const downloadBtn = document.querySelector(".download-btn");
-const fileLink = "https://drive.google.com/uc?export=download&id=1aYiaLn3YOjL-_o5QBCy7tU1epqA6gZoi";
-const text = "test";
+fileLink = "https://drive.google.com/uc?export=download&id=1aYiaLn3YOjL-_o5QBCy7tU1epqA6gZoi";
+
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
         return text = fileLink;
@@ -16,7 +17,7 @@ const initTimer = () => {
         }
         clearInterval(initCounter);
         
-        downloadBtn.innerText = "Your file is downloading...";
+        fileLink.innerText = "Your file is downloading...";
         return text.innerText = fileLink;
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
