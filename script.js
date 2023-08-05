@@ -3,29 +3,32 @@ const fileLink = "https://drive.google.com/uc?export=download&id=1aYiaLn3YOjL-_o
 
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
-        return text = fileLink;
+        
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+let text = "FF Tools ProMax " + d + "/" + m + "/" + y;
+let encoded = window.btoa(text);
+document.getElementById("cyrust").innerHTML = "Original: " + text + "<br>Password: " + encoded;
     }
     let timer = downloadBtn.dataset.timer;
     downloadBtn.classList.add("timer");
-    downloadBtn.innerHTML = `Your password will <br>begin in <b>${timer}</b> seconds`;
+    downloadBtn.innerHTML = `Password<b>${timer}</b> seconds`;
     const initCounter = setInterval(() => {
         if(timer > 0) {
             timer--;
-            return downloadBtn.innerHTML = `Your password will <br>begin in <b>${timer}</b> seconds`;
+            return downloadBtn.innerHTML = `Password<b>${timer}</b> seconds`;
         }
         clearInterval(initCounter);
         
         downloadBtn.innerText = "Your file is downloading...";
-        let text.innerHTML = "Cyrustgarage";
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerHTML = `<span class="icon material-symbols-rounded">vertical_align_bottom</span>
                                      <span class="text">Download Again</span>`;
-        }, 10000);
-        
+        }, 3000);
     }, 1000);
-    downloadBtn.addEventListener("click", initTimer);
-
 }
 
 downloadBtn.addEventListener("click", initTimer);
