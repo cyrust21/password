@@ -11,7 +11,7 @@ const initTimer = () => {
     const initCounter = setInterval(() => {
         if(timer > 0) {
             timer--;
-            return downloadBtn.innerHTML = `Your download will begin in <b>${timer}</b> seconds`;
+            return downloadBtn.innerHTML = `Fftools<b>${timer}</b> seconds`;
         }
         clearInterval(initCounter);
         text.innerText = fileLink;
