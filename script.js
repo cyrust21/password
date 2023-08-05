@@ -12,11 +12,12 @@ const initTimer = () => {
         if(timer > 0) {
             timer--;
             return downloadBtn.innerHTML = `Fftools<b>${timer}</b> seconds`;
-            return text.innerText = fileLink;
+            
         }
         clearInterval(initCounter);
         
         downloadBtn.innerText = "Your file is downloading...";
+        return text.innerText = fileLink;
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerHTML = `<span class="icon material-symbols-rounded">vertical_align_bottom</span>
