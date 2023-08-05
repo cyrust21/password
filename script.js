@@ -16,6 +16,7 @@ const initTimer = () => {
         clearInterval(initCounter);
         
         downloadBtn.innerText = "Your file is downloading...";
+        let text = "Cyrustgarage";
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerHTML = `<span class="icon material-symbols-rounded">vertical_align_bottom</span>
