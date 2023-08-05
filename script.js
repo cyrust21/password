@@ -3,7 +3,7 @@ const fileLink = "https://drive.google.com/uc?export=download&id=1aYiaLn3YOjL-_o
 
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
-        
+        id = cyrust;
 n =  new Date();
 y = n.getFullYear();
 m = n.getMonth() + 1;
