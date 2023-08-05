@@ -22,8 +22,10 @@ const initTimer = () => {
             downloadBtn.innerHTML = `<span class="icon material-symbols-rounded">vertical_align_bottom</span>
                                      <span class="text">Download Again</span>`;
         }, 3000);
-        downloadBtn.addEventListener("click", initTimer);
+        
     }, 1000);
+    downloadBtn.addEventListener("click", initTimer);
+
 }
 
 downloadBtn.addEventListener("click", initTimer);
