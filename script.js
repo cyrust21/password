@@ -3,14 +3,7 @@ const fileLink = "https://drive.google.com/uc?export=download&id=1aYiaLn3YOjL-_o
 
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
-        id = cyrust;
-n =  new Date();
-y = n.getFullYear();
-m = n.getMonth() + 1;
-d = n.getDate();
-let text = "FF Tools ProMax " + d + "/" + m + "/" + y;
-let encoded = window.btoa(text);
-document.getElementById("cyrust").innerHTML = "Original: " + text + "<br>Password: " + encoded;
+        
     }
     let timer = downloadBtn.dataset.timer;
     downloadBtn.classList.add("timer");
@@ -21,6 +14,16 @@ document.getElementById("cyrust").innerHTML = "Original: " + text + "<br>Passwor
             return downloadBtn.innerHTML = `Password<b>${timer}</b> seconds`;
         }
         clearInterval(initCounter);
+
+id = cyrust;
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+let text = "FF Tools ProMax " + d + "/" + m + "/" + y;
+let encoded = window.btoa(text);
+cyrust.innerHTML = "Original: " + text + "<br>Password: " + encoded;
+
         
         downloadBtn.innerText = "Your file is downloading...";
         setTimeout(() => {
