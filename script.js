@@ -15,7 +15,8 @@ const initTimer = () => {
         }
         clearInterval(initCounter);
         return cyrust.innerHTML = "fileLink";
-        
+        return downloadBtn.innerHTML = `FF Tools`;
+
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerHTML = `<span class="icon material-symbols-rounded">vertical_align_bottom</span>
