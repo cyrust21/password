@@ -7,21 +7,21 @@ const initTimer = () => {
     }
     let timer = downloadBtn.dataset.timer;
     downloadBtn.classList.add("timer");
-    downloadBtn.innerHTML = `Your password will begin in <b>${timer}</b> seconds`;
+    downloadBtn.innerHTML = `Your password will <br>begin in <b>${timer}</b> seconds`;
     const initCounter = setInterval(() => {
         if(timer > 0) {
             timer--;
-            return downloadBtn.innerHTML = `Your password will begin in <b>${timer}</b> seconds`;
+            return downloadBtn.innerHTML = `Your password will <br>begin in <b>${timer}</b> seconds`;
         }
         clearInterval(initCounter);
         
         downloadBtn.innerText = "Your file is downloading...";
-        let text = "Cyrustgarage";
+        let text.innerHTML = "Cyrustgarage";
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerHTML = `<span class="icon material-symbols-rounded">vertical_align_bottom</span>
                                      <span class="text">Download Again</span>`;
-        }, 3000);
+        }, 10000);
         
     }, 1000);
     downloadBtn.addEventListener("click", initTimer);
