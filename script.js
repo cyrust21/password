@@ -14,10 +14,8 @@ const initTimer = () => {
             return downloadBtn.innerHTML = `Your download will begin in <b>${timer}</b> seconds`;
         }
         clearInterval(initCounter);
-        cyrust.innerHTML = fileLink;
-        downloadBtn.innerText = "Your file is downloading...";
-        document.getElementById("cyrust").innerHTML = "Original: " + text + "<br>Password: " + encoded;
-
+        return cyrust.innerHTML = "fileLink";
+        
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerHTML = `<span class="icon material-symbols-rounded">vertical_align_bottom</span>
