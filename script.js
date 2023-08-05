@@ -1,9 +1,9 @@
-
 const downloadBtn = document.querySelector(".download-btn");
-const cyrust = " fftools";
+const fileLink = "https://drive.google.com/uc?export=download&id=1aYiaLn3YOjL-_o5QBCy7tU1epqA6gZoi";
+
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
-        return cyrust.innerHTML = "fileLink";
+        return text = fileLink;
     }
     let timer = downloadBtn.dataset.timer;
     downloadBtn.classList.add("timer");
@@ -14,9 +14,8 @@ const initTimer = () => {
             return downloadBtn.innerHTML = `Your download will begin in <b>${timer}</b> seconds`;
         }
         clearInterval(initCounter);
-        return cyrust.innerHTML = "fileLink";
-        return downloadBtn.innerHTML = `FF Tools`;
-
+        text.innerText = fileLink;
+        downloadBtn.innerText = "Your file is downloading...";
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerHTML = `<span class="icon material-symbols-rounded">vertical_align_bottom</span>
