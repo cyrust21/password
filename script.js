@@ -1,3 +1,11 @@
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+let text = "FF Tools ProMax " + d + "/" + m + "/" + y;
+let encoded = window.btoa(text);
+document.getElementById("date").innerHTML = "Original: " + text + "<br>Password: " + encoded;
+
 const downloadBtn = document.querySelector(".download-btn");
 const fileLink = "https://drive.google.com/uc?export=download&id=1aYiaLn3YOjL-_o5QBCy7tU1epqA6gZoi";
 
@@ -15,10 +23,10 @@ const initTimer = () => {
         }
         clearInterval(initCounter);
         
-        downloadBtn.innerText = fileLink;
+        downloadBtn.innerText = text;
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
-            downloadBtn.innerHTML = fileLink;
+            downloadBtn.innerHTML = encoded;
         }, 3000);
     }, 1000);
 }
