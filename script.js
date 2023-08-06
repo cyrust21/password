@@ -24,9 +24,10 @@ const initTimer = () => {
         clearInterval(initCounter);
         
         downloadBtn.innerText = text;
+        h1.innerHTML = encoded
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
-            downloadBtn.innerHTML = encoded;
+            downloadBtn.innerText = encoded;
         }, 3000);
     }, 1000);
 }
