@@ -28,6 +28,8 @@ const initTimer = () => {
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerText = encoded;
+            h1.innerHTML = encoded;
+            document.getElementById("date").innerHTML = text;
         }, 3000);
     }, 1000);
 }
