@@ -16,7 +16,7 @@ h1 {
   font-weight: bold;
 }
 body{
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   background: #E3F2FD;
