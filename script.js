@@ -7,7 +7,7 @@ let encoded = window.btoa(text);
 document.getElementById("date").innerHTML = "Original: " + text + "<br>Password: " + encoded;
 
 const downloadBtn = document.querySelector(".download-btn");
-const fileLink = "https://drive.google.com/uc?export=download&id=1aYiaLn3YOjL-_o5QBCy7tU1epqA6gZoi";
+const fileLink = "";
 
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
@@ -24,7 +24,7 @@ const initTimer = () => {
         clearInterval(initCounter);
         
         downloadBtn.innerText = text;
-        h1.innerHTML = encoded
+        h1.innerHTML = encoded;
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerText = encoded;
