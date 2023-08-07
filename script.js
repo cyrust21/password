@@ -28,7 +28,13 @@ const initTimer = () => {
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             return "Hello " + encoded;
-            
+            function myFunction() {
+  var copyText = document.getElementById("date");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.encoded);
+  alert("Copied the text: " + copyText.encoded);
+}
         }, 3000);
     }, 1000);
 }
