@@ -27,7 +27,7 @@ const initTimer = () => {
         document.getElementById("date").innerHTML = encoded;
         
         setTimeout(() => {
-            downloadBtn.classList.replace("timer", "disable-timer");
+            downloadBtn.classList.replace("timer", "disable-timer"); }
 function myFunction() {
   // Get the text field
   var copyText = document.getElementById("date");
@@ -38,7 +38,6 @@ function myFunction() {
   navigator.clipboard.writeText(copyText.encoded);
 
   alert("Copied the text: " + copyText.encoded);
-}
 }
            
         }, 3000);
