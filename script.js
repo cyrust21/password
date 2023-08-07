@@ -28,7 +28,10 @@ const initTimer = () => {
         
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
-
+downloadBtn.addEventListener("click");
+            function click() {
+  document.getElementById("myText").value = encoded;
+}
            
         }, 3000);
     }, 1000);
