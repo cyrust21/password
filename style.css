@@ -17,7 +17,7 @@ h1 {
 }
 body{
   display: block;
-  
+  posisition: center;
   align-items: center;
   margin: auto;
   justify-content: center;
