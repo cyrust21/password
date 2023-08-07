@@ -31,6 +31,10 @@ const initTimer = () => {
            
         }, 3000);
     }, 1000);
+}
+
+downloadBtn.addEventListener("click", initTimer);
+
     function myFunction() {
   // Get the text field
   var copyText = document.getElementById("date");
@@ -42,6 +46,4 @@ const initTimer = () => {
 
   alert("Copied the text: " + copyText.encoded);
 }
-}
 
-downloadBtn.addEventListener("click", initTimer);
