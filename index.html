@@ -31,17 +31,18 @@
       <span class="text">Password</span>
     </button><br/>
 	 <button class="download-btn" onclick="myFunction()">Copy text</button>
+	  <input type="text" id="myText" value="Mickey">
 	  <script>   
 	  function myFunction() {
   // Get the text field
-  var copyText = document.getElementById("date");
+  var copyText = document.getElementById("myText");
 
   copyText.select();
   copyText.setSelectionRange(0, 99999);
 
-  navigator.clipboard.writeText(copyText.h1);
+  navigator.clipboard.writeText(copyText.vaule);
 
-  alert("Copied the text: " + copyText.encoded);
+  alert("Copied the text: " + copyText.vaule);
 }
   </script>
   </body>
