@@ -28,9 +28,17 @@ const initTimer = () => {
         
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
-downloadBtn.addEventListener("click");
-            function click() {
-  document.getElementById("myImput").value = encoded;
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("date");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+
+  navigator.clipboard.writeText(copyText.encoded);
+
+  alert("Copied the text: " + copyText.encoded);
+}
 }
            
         }, 3000);
