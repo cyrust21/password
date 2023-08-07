@@ -4,11 +4,14 @@ m = n.getMonth() + 1;
 d = n.getDate();
 let text = "FF Tools ProMax " + d + "/" + m + "/" + y;
 let encoded = window.btoa(text);
-document.getElementById("date").innerHTML = encoded;
+document.getElementById("date").innerHTML = myFunction(encoded);
+const downloadBtn = document.querySelector(".download-btn");
+
 
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
-        return location.href = fileLink;
+        
+        return myFunction = encoded;
     }
     let timer = downloadBtn.dataset.timer;
     downloadBtn.classList.add("timer");
@@ -19,7 +22,7 @@ const initTimer = () => {
             return downloadBtn.innerHTML = `Your password is <b>${timer}</b> seconds`;
         }
         clearInterval(initCounter);
-        location.href = fileLink;
+        myFunction = encoded;
         downloadBtn.innerText = encoded;
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
