@@ -29,13 +29,15 @@ const initTimer = () => {
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerText = encoded;
-            function .download-btn() {
-        var copyText = document.getElementById("date");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.encoded);
-        alert("Copied the text: " + copyText.encoded);
-}
+           let text = document.getElementById('myText').innerHTML;
+  const copyContent = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      console.log('Content copied to clipboard');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }
         }, 3000);
     }, 1000);
 }
