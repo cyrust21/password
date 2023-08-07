@@ -33,6 +33,13 @@ const initTimer = () => {
     }, 1000);
 }
 downloadBtn.addEventListener("click", initTimer);
+function myFunction() {
+  var copyText = document.getElementById("date");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.encoded);
+  alert("Copied the text: " + copyText.encoded);
+}
 
 
 
