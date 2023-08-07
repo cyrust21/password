@@ -12,13 +12,7 @@ const fileLink = "";
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
         return location.href = fileLink;
-        function .download-btn() {
-        var copyText = document.getElementById("date");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.encoded);
-        alert("Copied the text: " + copyText.encoded);
-}
+        
     }
     let timer = downloadBtn.dataset.timer;
     downloadBtn.classList.add("timer");
@@ -35,8 +29,13 @@ const initTimer = () => {
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerText = encoded;
-            h1.innerHTML = encoded;
-            document.getElementById("date").innerHTML = text;
+            function .download-btn() {
+        var copyText = document.getElementById("date");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.encoded);
+        alert("Copied the text: " + copyText.encoded);
+}
         }, 3000);
     }, 1000);
 }
