@@ -24,7 +24,8 @@ const initTimer = () => {
         }
         clearInterval(initCounter);
         location.href = fileLink;
-        document.getElementById("date").innerHTML = encoded;
+        downloadBtn.getElementById("date").innerHTML = text;
+        downloadBtn.innerText = "encoded";
         
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer"); 
