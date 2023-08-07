@@ -16,8 +16,8 @@ h1 {
   font-weight: bold;
 }
 body{
-  display: block;
-  min-height: 100vh;
+  display: flex;
+  
   align-items: center;
   margin: auto;
   justify-content: center;
