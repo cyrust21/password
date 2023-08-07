@@ -30,7 +30,7 @@ const initTimer = () => {
             downloadBtn.classList.replace("timer", "disable-timer");
 downloadBtn.addEventListener("click");
             function click() {
-  document.getElementById("myText").value = encoded;
+  document.getElementById("myImput").value = encoded;
 }
            
         }, 3000);
