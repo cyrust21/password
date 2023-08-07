@@ -35,15 +35,5 @@ const initTimer = () => {
 
 downloadBtn.addEventListener("click", initTimer);
 
-    function myFunction() {
-  // Get the text field
-  var copyText = document.getElementById("date");
 
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-
-  navigator.clipboard.writeText(copyText.encoded);
-
-  alert("Copied the text: " + copyText.encoded);
-}
 
