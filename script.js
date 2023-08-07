@@ -29,7 +29,7 @@ const initTimer = () => {
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerText = encoded;
-           let text = document.getElementById('myText').innerHTML;
+           let text = document.getElementById('date').innerHTML;
   const copyContent = async () => {
     try {
       await navigator.clipboard.writeText(text);
