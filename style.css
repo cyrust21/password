@@ -19,6 +19,7 @@ body{
   display: block;
   min-height: 100vh;
   align-items: center;
+  margin: auto;
   justify-content: center;
   background: #E3F2FD;
 }
