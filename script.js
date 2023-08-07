@@ -11,7 +11,7 @@ const fileLink = "";
 
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
-        return location.href = fileLink;
+        
         
     }
     let timer = downloadBtn.dataset.timer;
@@ -23,7 +23,7 @@ const initTimer = () => {
             return downloadBtn.innerHTML = `Your password is <b>${timer}</b> seconds`;
         }
         clearInterval(initCounter);
-        location.href = fileLink;
+        
         downloadBtn.getElementById("date").innerHTML = text;
         downloadBtn.innerText = "encoded";
         
