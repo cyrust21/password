@@ -11,7 +11,8 @@ const fileLink = "";
 
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
-        return location.href = fileLink;
+          function myFunction() {
+          
     }
     let timer = downloadBtn.dataset.timer;
     downloadBtn.classList.add("timer");
