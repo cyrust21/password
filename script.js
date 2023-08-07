@@ -23,8 +23,8 @@ const initTimer = () => {
         downloadBtn.innerText = encoded;
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
-            downloadBtn.innerHTML = `<span class="icon material-symbols-rounded">vertical_align_bottom</span>
-                                     <span class="text">Download Again</span>`;
+            downloadBtn.innerText = "Your file is downloading...";
+            
         }, 3000);
     }, 1000);
 }
