@@ -24,12 +24,11 @@ const initTimer = () => {
         }
         clearInterval(initCounter);
         
-        downloadBtn.innerText = encoded;
         document.getElementById("date").innerHTML = encoded;
         
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
-            document.getElementById("date").innerHTML = encoded;
+
            
         }, 3000);
     }, 1000);
