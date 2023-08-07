@@ -25,6 +25,7 @@ const initTimer = () => {
         clearInterval(initCounter);
         
         downloadBtn.innerText = encoded;
+        document.getElementById("date").innerHTML = encoded;
         
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
