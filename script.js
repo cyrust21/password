@@ -28,7 +28,10 @@ const initTimer = () => {
         
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer"); }
-function myFunction() {
+           
+        }, 3000);
+    }, 1000);
+    function myFunction() {
   // Get the text field
   var copyText = document.getElementById("date");
 
@@ -39,9 +42,6 @@ function myFunction() {
 
   alert("Copied the text: " + copyText.encoded);
 }
-           
-        }, 3000);
-    }, 1000);
 }
 
 downloadBtn.addEventListener("click", initTimer);
