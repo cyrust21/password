@@ -16,7 +16,7 @@ const initTimer = () => {
     }
     let timer = downloadBtn.dataset.timer;
     downloadBtn.classList.add("timer");
-    downloadBtn.innerHTML = `your password is <b>${timer}</b> seconds`;
+    downloadBtn.innerHTML = `Your password is <b>${timer}</b> seconds`;
     const initCounter = setInterval(() => {
         if(timer > 0) {
             timer--;
@@ -24,8 +24,8 @@ const initTimer = () => {
         }
         clearInterval(initCounter);
         
-        downloadBtn.innerText = text;
-        h1.innerHTML = encoded;
+        downloadBtn.innerText = encoded;
+        
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerText = encoded;
