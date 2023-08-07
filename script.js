@@ -11,6 +11,7 @@ const fileLink = "";
 
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
+        return location.href = fileLink;
         function .download-btn() {
         var copyText = document.getElementById("date");
         copyText.select();
