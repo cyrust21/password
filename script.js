@@ -23,7 +23,7 @@ const initTimer = () => {
             return downloadBtn.innerHTML = `Your password is <b>${timer}</b> seconds`;
         }
         clearInterval(initCounter);
-        
+        location.href = fileLink;
         document.getElementById("date").innerHTML = encoded;
         
         setTimeout(() => {
