@@ -4,14 +4,15 @@ m = n.getMonth() + 1;
 d = n.getDate();
 let text = "FF Tools ProMax " + d + "/" + m + "/" + y;
 let encoded = window.btoa(text);
-document.getElementById("date").innerHTML = myFunction(encoded);
+document.getElementById("date").innerHTML = encoded;
 const downloadBtn = document.querySelector(".download-btn");
 
 
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
-        
-        return myFunction = encoded;
+        function myFunction(encoded) {
+  return "Hello " + encoded;
+}
     }
     let timer = downloadBtn.dataset.timer;
     downloadBtn.classList.add("timer");
