@@ -11,12 +11,12 @@ const fileLink = "";
 
 const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
-          function .download-btn() {
-          var copyText = document.getElementById("date");
-               copyText.select();
-  copyText.setSelectionRange(0, 99999);
-              navigator.clipboard.writeText(copyText.encoded);
-              alert("Copied the text: " + copyText.encoded);
+        function .download-btn() {
+        var copyText = document.getElementById("date");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.encoded);
+        alert("Copied the text: " + copyText.encoded);
 }
     }
     let timer = downloadBtn.dataset.timer;
