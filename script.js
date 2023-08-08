@@ -2,9 +2,9 @@ n =  new Date();
 y = n.getFullYear();
 m = n.getMonth() + 1;
 d = n.getDate();
-let text = "FF Tools ProMax " + d + "/" + m + "/" + y;
+let text = "FFToolsProMax " + d + "/" + m + "/" + y;
 let encoded = window.btoa(text);
-document.getElementById("date").innerHTML = encoded;
+document.getElementById("date").innerHTML = text + encoded;
 const downloadBtn = document.querySelector(".download-btn");
 
 
