@@ -4,7 +4,7 @@ m = n.getMonth() + 1;
 d = n.getDate();
 let text = "FFToolsProMax " + d + "/" + m + "/" + y;
 let encoded = window.btoa(text);
-document.getElementById("date").innerHTML = text + encoded;
+document.getElementById("date").innerHTML = encoded;
 const downloadBtn = document.querySelector(".download-btn");
 
 
