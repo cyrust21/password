@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Password Sensi Booster</title>
+</head>
+<body>
+<p id="date"></p>
+<script>
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+let text = "FFToolsProMax " + d + "/" + m + "/" + y;
+let encoded = window.btoa(text);
+document.getElementById("date").innerHTML = encoded;
+</script>
+</body>
+</html>
