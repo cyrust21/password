@@ -27,8 +27,9 @@ const initTimer = () => {
         downloadBtn.innerText = encoded;
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
-            return "Hello " + encoded;
-            
+            function myFunction(encoded) {
+  return "Hello " + encoded;
+}
         }, 3000);
     }, 1000);
 }
