@@ -23,17 +23,13 @@ const initTimer = () => {
             return downloadBtn.innerHTML = `Your password is <b>${timer}</b> seconds`;
         }
         clearInterval(initCounter);
-        myFunction = encoded;
-        downloadBtn.innerText = encoded;
-        setTimeout(() => {
-            downloadBtn.classList.replace("timer", "disable-timer");
-            function myFunction(encoded) {
-  return "Hello " + encoded;
-}
+        document.getElementById("date").innerHTML = encoded;
+
         }, 3000);
     }, 1000);
 }
 downloadBtn.addEventListener("click", initTimer);
+
 function myFunction() {
   var copyText = document.getElementById("date");
   copyText.select();
